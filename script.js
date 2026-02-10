@@ -434,6 +434,10 @@ function initSmoothScroll() {
                         content.classList.remove('collapsed');
                         target.classList.remove('is-collapsed');
                         content.style.maxHeight = content.scrollHeight + 'px';
+                        // Set to none after animation for proper reflow
+                        setTimeout(() => {
+                            content.style.maxHeight = 'none';
+                        }, 500);
                         if (icon) icon.textContent = '−';
                     }
                 }
@@ -1275,6 +1279,13 @@ function initCollapsibleSections() {
             if (icon) icon.textContent = '+';
         }
 
+        // After expand animation, set maxHeight to none so content can reflow
+        content.addEventListener('transitionend', (e) => {
+            if (e.propertyName === 'max-height' && !content.classList.contains('collapsed')) {
+                content.style.maxHeight = 'none';
+            }
+        });
+
         trigger.addEventListener('click', () => {
             const isCollapsed = content.classList.contains('collapsed');
 
@@ -1284,6 +1295,10 @@ function initCollapsibleSections() {
                 content.style.maxHeight = content.scrollHeight + 'px';
                 if (icon) icon.textContent = '−';
             } else {
+                // Set explicit height first so transition works
+                content.style.maxHeight = content.scrollHeight + 'px';
+                // Force reflow
+                content.offsetHeight;
                 content.classList.add('collapsed');
                 section.classList.add('is-collapsed');
                 content.style.maxHeight = '0';
