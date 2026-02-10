@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadCon 9B | The Hitchhiker's Guide to RadCon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- DON'T PANIC Banner -->
+    <div class="dont-panic-banner" id="dont-panic">
+        <span class="friendly-letters">DON'T PANIC</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/radcon-005.png" alt="RadCon 9B Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#guide">Guide</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#vendors">Vendors</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#hospitality">Food</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact Dev</a></li>
+            </ul>
+            <div class="towel-counter">
+                <span class="towel-icon">🧺</span>
+                <span class="towel-text">Towel Status: <strong>LOCATED</strong></span>
+            </div>
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="#guide">Guide</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#map">Map</a>
+        <a href="#vendors">Vendors</a>
+        <a href="#art">Art</a>
+        <a href="#hospitality">Food</a>
+        <a href="#info">Info</a>
+        <a href="#contact">Contact Dev</a>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background">
+            <img src="images/radcon-000.jpg" alt="RadCon 9B Cover Art" class="hero-cover-art">
+        </div>
+        <div class="hero-content">
+            <div class="guide-cover">
+                <div class="guide-screen">
+                    <img src="images/radcon-005.png" alt="RadCon 9B" class="hero-logo">
+                    <p class="tagline">The Hitchhiker's Guide to RadCon</p>
+                    <p class="dates">February 13-15, 2026</p>
+                    <p class="location">Red Lion Hotel, Pasco, WA</p>
+                </div>
+            </div>
+            <div class="hero-info">
+                <blockquote class="guide-quote">
+                    "Whether escaping a Vogon Poetry Reading or seeking the meaning of life, you can grab a drink and take a seat."
+                </blockquote>
+                <div class="answer-42">
+                    <span class="the-answer">42</span>
+                    <span class="answer-label">The Answer to Life, the Universe, and Everything<br>(also our years of awesome)</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll for More Improbability</span>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <!-- Guide Entry Section -->
+    <section id="guide" class="section guide-entry collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">GUIDE ENTRY: RADCON</h2>
+                <span class="expand-icon">+</span>
+                <div class="reliability-rating">
+                    <span>Reliability Rating:</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="mostly">(Mostly Harmless)</span>
+                </div>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="guide-content">
+                <div class="letter-from-chair">
+                    <h3>Letter from the Chair</h3>
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">transmission_from_chair.txt</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p>Hello, all my friends from across the universe! We hope your travels here were easy and pleasant.</p>
+                            <p>This year we have put together an event that we hope brings a great and happy time for you and yours. We brought back many fan favorites and some new and exciting things with an eye for both young and old.</p>
+                            <p>A few things to remember while you look around: we have many friends, so be thoughtful. We all have things that make us happy and things that bug us, try not to be the bug. Eat a couple meals, wash up when you can, and sleep when you can. We all need breaks.</p>
+                            <p>Remember, we (staffers) are all volunteers and we are not omniscient, but we are here to help.</p>
+                            <p class="signature">— Con Chair Chad Wilcox<br>Chair@radcon.org</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rules-of-radcon">
+                    <div class="rule rule-1">
+                        <span class="rule-number">01</span>
+                        <h4>The 1st Rule of RadCon</h4>
+                        <p class="rule-text">Don't Be A Pinhead</p>
+                    </div>
+                    <div class="rule rule-2">
+                        <span class="rule-number">02</span>
+                        <h4>The 2nd Rule of RadCon</h4>
+                        <p class="rule-text">Follow the 3-2-1 Rule</p>
+                        <ul class="rule-list">
+                            <li><span class="num">3</span> Hours of sleep</li>
+                            <li><span class="num">2</span> Meals</li>
+                            <li><span class="num">1</span> Shower</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convention Hours -->
+            <div class="convention-hours">
+                <h3>Convention Hours</h3>
+                <div class="hours-grid">
+                    <div class="hour-card">
+                        <div class="card-icon">📝</div>
+                        <h4>Registration</h4>
+                        <ul>
+                            <li>Fri 11am-9pm</li>
+                            <li>Sat 9am-9pm</li>
+                            <li>Sun 9am-4pm</li>
+                        </ul>
+                    </div>
+                    <div class="hour-card">
+                        <div class="card-icon">🍔</div>
+                        <h4>Hospitality</h4>
+                        <ul>
+                            <li>Fri Noon-Midnight</li>
+                            <li>Sat All Day</li>
+                            <li>Sun Midnight-2pm</li>
+                        </ul>
+                    </div>
+                    <div class="hour-card">
+                        <div class="card-icon">🛒</div>
+                        <h4>Dealer's Room</h4>
+                        <ul>
+                            <li>Fri Noon-9pm</li>
+                            <li>Sat 9am-8pm</li>
+                            <li>Sun 9am-5pm</li>
+                        </ul>
+                    </div>
+                    <div class="hour-card">
+                        <div class="card-icon">🎨</div>
+                        <h4>Art Show</h4>
+                        <ul>
+                            <li>Fri Noon-9pm</li>
+                            <li>Sat 9am-8pm</li>
+                            <li>Sun 9am-11am</li>
+                        </ul>
+                    </div>
+                    <div class="hour-card">
+                        <div class="card-icon">👶</div>
+                        <h4>KidCon</h4>
+                        <ul>
+                            <li>Fri 4pm-7pm</li>
+                            <li>Sat 10am-7pm</li>
+                            <li>Sun 10am-5pm</li>
+                        </ul>
+                    </div>
+                    <div class="hour-card">
+                        <div class="card-icon">🎮</div>
+                        <h4>Con-Teen-A</h4>
+                        <ul>
+                            <li>Fri 4pm-7pm</li>
+                            <li>Sat 10am-7pm</li>
+                            <li>Sun 10am-5pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Choose Your Own RadCon -->
+            <div class="choose-adventure">
+                <div class="adventure-content">
+                    <h3>Choose Your Own RadCon Adventure</h3>
+                    <p class="adventure-title">"Your Towel Is Out There"</p>
+                    <p>Start at Registration and follow the prompts, pursuing a towel thief across the galaxy, while also discovering new and never-before-seen-by-you areas of the convention!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Schedule -->
+    <section id="schedule" class="section schedule-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">FULL PROGRAMMING SCHEDULE</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Happenings for the Hoopy Frood</p>
+                <p class="hoopy-def"><em>Hoopy Frood — Really cool, together, amazing (person)</em></p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="schedule-controls">
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-day="friday">Friday</button>
+                    <button class="tab-btn" data-day="saturday">Saturday</button>
+                    <button class="tab-btn" data-day="sunday">Sunday</button>
+                    <button class="view-all-btn">View All Days</button>
+                </div>
+
+                <div class="schedule-filters">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="favorites">♥ Favorites</button>
+                        <button class="filter-btn" data-filter="featured">Featured</button>
+                        <button class="filter-btn" data-filter="workshop">Workshops</button>
+                        <button class="filter-btn" data-filter="panel">Panels</button>
+                        <button class="filter-btn" data-filter="performance">Shows</button>
+                        <button class="filter-btn" data-filter="gaming">Gaming</button>
+                        <button class="filter-btn" data-filter="science">Science</button>
+                        <button class="filter-btn" data-filter="writing">Writing</button>
+                        <button class="filter-btn" data-filter="art">Art</button>
+                        <button class="filter-btn" data-filter="family">Family</button>
+                        <button class="filter-btn" data-filter="adult">21+</button>
+                        <button class="filter-btn room-filter" data-room="Bronze Ballroom">Bronze</button>
+                        <button class="filter-btn room-filter" data-room="Sage Boardroom">Sage</button>
+                        <button class="filter-btn room-filter" data-room="Harvest Boardroom">Harvest</button>
+                        <button class="filter-btn room-filter" data-room="Executive Boardroom">Executive</button>
+                        <button class="filter-btn room-filter" data-room="Bin 20">Bin 20</button>
+                        <button class="filter-btn room-filter" data-room="Courtyard">Courtyard</button>
+                    </div>
+                </div>
+
+                <div class="schedule-search">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="schedule-search-input" placeholder="Search panels, presenters..." id="schedule-search">
+                    </div>
+                </div>
+
+                <div class="panel-count-display">Showing <span id="panel-count">0</span> events</div>
+            </div>
+
+            <div class="schedule-days-container">
+            <!-- Friday Schedule -->
+            <div class="schedule-day active" id="friday-schedule" data-day-label="Friday">
+                <div class="time-block">
+                    <h4 class="time-header">1:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card workshop">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>K-Pop Dance Workshop for All Levels</h5>
+                            <p>Have a passion for K-Pop and always wanted to dance like your idols? No dance experience required!</p>
+                            <span class="presenter">Kumo the Crimson Wolfe</span>
+                        </div>
+                        <div class="panel-card panel">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Future Energy</h5>
+                            <p>Beyond wind and solar, what's coming in the next five years? The Hydrogen Economy? Fusion?</p>
+                            <span class="presenter">Manny Frishberg, AK Lyr, David Tucker, Jim Wright</span>
+                        </div>
+                        <div class="panel-card performance">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>Live Reading of the US Constitution</h5>
+                            <p>Panelists take turns reading the entire US Constitution aloud.</p>
+                            <span class="presenter">Rhiannon Louve, Virginia Black, Judy Johnson</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">2:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card performance">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>K-Pop Extravaganza: Dance & Trivia Competition</h5>
+                            <p>Showcase your dancing skills and test your knowledge. Exciting prizes!</p>
+                            <span class="presenter">Kumo the Crimson Wolfe</span>
+                        </div>
+                        <div class="panel-card workshop">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Fighting in Fiction: Writing a Knockout Scene</h5>
+                            <p>Live demonstrations of techniques discussing the realities of fighting.</p>
+                            <span class="presenter">Jason Bond, D.L. Solum, Doug Odell</span>
+                        </div>
+                        <div class="panel-card panel">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Aerospace History Fact, Fiction, and Flight</h5>
+                            <p>Bridge the gap between the lab and the drawing board with a NASA engineer.</p>
+                            <span class="presenter">Jane Campbell, Bill Warren, Corey Frazier</span>
+                        </div>
+                        <div class="panel-card panel">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Writing for Television</h5>
+                            <p>From Star Trek to Babylon 5. Please, no tribbles.</p>
+                            <span class="presenter">David Gerrold</span>
+                        </div>
+                        <div class="panel-card panel">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Aliens in the Honorverse</h5>
+                            <p>Explore the worlds David Weber created for Honor Harrington.</p>
+                            <span class="presenter">Athena Pelly</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>(Book) Cover Basics: Getting Cover Art</h5>
+                            <p>The nuts and bolts of getting a professional, marketable book cover.</p>
+                            <span class="presenter">Bob Brown, Thomas Gondolfi, Michael Brugger</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Voice Acting in Audiobooks</h5>
+                            <p>Voice acting discussion focused on audiobooks and character building.</p>
+                            <span class="presenter">Corvin King, Anne Prather, Ron Leota</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Science Fiction for TableTop RPG</h5>
+                            <p>From Traveler to Starfinder 2nd edition—play RPGs in the Science Fiction genre.</p>
+                            <span class="presenter">Shawn Merrow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">3:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Show Panel Area</span>
+                            <h5>Round Table Art</h5>
+                            <p>6 artists, 6 pieces of paper, work on each piece for a few minutes then pass it along.</p>
+                            <span class="presenter">Dave Acton</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Using the Hero's Journey to Amp Your Story</h5>
+                            <p>How Joseph Campbell's mythology research can impact your writing.</p>
+                            <span class="presenter">Jason Bond, D.L. Solum</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>aUI, the Language of Space Workshop</h5>
+                            <p>Learn a cosmic, philosophical ideographic language with 31 symbols.</p>
+                            <span class="presenter">Andi Weilgart</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Using Tarot in Writing</h5>
+                            <p>Use Tarot cards for plot arcs, character actions, and world-building.</p>
+                            <span class="presenter">Vanessa MacLelland, Francis Pauli, Eva Elasigue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>The Ultimate Fandom Gameshow: Zelda Edition</h5>
+                            <p>Test your wisdom through trivia and courage through side quests!</p>
+                            <span class="presenter">Rin Fisher</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Courtyard</span>
+                            <h5>Pewter & Casting Demo</h5>
+                            <p>Hands-on pewter casting. Cast your own token! Ages 16+.</p>
+                            <span class="presenter">Kady Nicols</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">4:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Room Panel Area</span>
+                            <h5>Art Demo with Andy Vanoverberghe</h5>
+                        </div>
+                        <div class="panel-card adult">
+                            <span class="room-tag">After Dark</span>
+                            <h5>Full Body Airbrush Demonstration</h5>
+                            <p>Live, full-body airbrush tutorial transforming someone into an alien.</p>
+                            <span class="presenter">Abby Borneman</span>
+                            <span class="age-tag">21+</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Hand Drumming</h5>
+                            <p>Learn beginner hand drumming with Arab region rhythms. Loaner drums available.</p>
+                            <span class="presenter">Juliana Aldrich</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Genetics on the Edge</h5>
+                            <p>From Mendel to epigenetics and gene editing.</p>
+                            <span class="presenter">Anne Prather, David Tucker</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>An Analysis of Arcane</h5>
+                            <p>Symbolism, Shakespearean tragedy, and class issues in Arcane.</p>
+                            <span class="presenter">Rin Fisher</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Tabletop Quests 101: Mastering D&D</h5>
+                            <p>Tips on character creation, storytelling, and Dungeon Master secrets.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">5:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Opening Ceremonies">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Opening Ceremonies</h5>
+                            <p>Hosted by BrAd Steiner. Meet this year's Guests of Honor and Special Guests!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">7:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Yoshi Vu">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: Yoshi Vu</h5>
+                            <p>VFX & Game Artist. Marine Corps veteran. Worked on Journey 2, Green Lantern, and Call of Duty: Black Ops 3.</p>
+                            <span class="presenter">Yoshi Vu</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Xenoethnomusicalogy</h5>
+                            <p>Build an "alien" instrument from household scraps and invent its history!</p>
+                            <span class="presenter">Glen "Scruffy" Hammer</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>What Makes a Book 'Cozy'?</h5>
+                            <p>What makes the cozy genre so popular? What makes a cozy successful?</p>
+                            <span class="presenter">Elizabeth R. Alix, Francis Pauli, Deborah Fredericks, and more</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Enough Science for a Writer to be Dangerous</h5>
+                            <p>Get the abbreviated version of thermodynamics and ask crazy scientists anything!</p>
+                            <span class="presenter">David Tucker, Corey Frazier, Eva Elasigue, Jane Campbell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Japanese Culture & Etiquette</h5>
+                            <p>Explore ancient and modern Japanese culture, martial and civil customs.</p>
+                            <span class="presenter">Bruce Schmoetzer, Arlene Henriques, Doug Staudt</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Courtyard</span>
+                            <h5>Forging Demo</h5>
+                            <span class="presenter">Valhalla's Workbench</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">8:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Jeff Sturgeon">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: Jeff Sturgeon</h5>
+                            <p>Metal Painter & Illustrator. Northwest artist known for award-winning metal paintings. 30+ year career spanning EA games to Harper Collins and NASA JPL cover work.</p>
+                            <span class="presenter">Jeff Sturgeon</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>What the Filk?</h5>
+                            <p>A quick rundown of the history and practice of this fannish activity.</p>
+                            <span class="presenter">Glen "Scruffy" Hammer</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Intro to Civilian Nuclear Reactors</h5>
+                            <p>US PWR, Canadian Candu, UK AGR—advantages and disadvantages.</p>
+                            <span class="presenter">Ed Buchan, Christopher Carston</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3117</span>
+                            <h5>A Welcome Reprieve</h5>
+                            <p>How fantasy stories can comfort, support, and inspire.</p>
+                            <span class="presenter">Doug O'Dell, Sanan Kolva, KG Anderson, and more</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>So You Want to be in an Art Show?</h5>
+                            <p>Tips, tricks, and logistics from professional artists.</p>
+                            <span class="presenter">Brittany Torres, Michael Brugger</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Making Chainmail</h5>
+                            <p>For jewelry or armor. Rings, pliers, and instruction supplied.</p>
+                            <span class="presenter">Mike McWatters, Jonosh Vladescue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Zelda's Legacy: A Journey through Hyrule</h5>
+                            <p>Deep dive through iconic moments, characters, and mysteries.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Lizzy D Hill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">9:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Bob Brown">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: Bob Brown</h5>
+                            <p>Publishing Guest of Honor. Richland, Washington based editor and publisher, Navy veteran. Founded B Cubed Press.</p>
+                            <span class="presenter">Bob Brown</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Fairytale Retellings for Young and Old</h5>
+                            <p>How fairytales have evolved into modern retellings.</p>
+                            <span class="presenter">C. Rae D'Arc, Manny Frishberg, Roberta Rice</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Worldbuilding for GMs</h5>
+                            <p>Create settings your characters may want to call home someday.</p>
+                            <span class="presenter">Doug Staudt, John Ellis, Shawn Merrow</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>On The Origins of Monsters</h5>
+                            <p>Where did monsters come from in human history?</p>
+                            <span class="presenter">Christian Cowles, Luke Campbell</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">10:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Dance Party</h5>
+                            <p>Get your groove on at the galaxy's hottest dance floor! 10pm - 2am</p>
+                        </div>
+                        <div class="panel-card adult">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Drink and Draw Artist Jam</h5>
+                            <p>All artists welcome to mingle, doodle, and bring a refreshment.</p>
+                            <span class="presenter">Dave Acton</span>
+                            <span class="age-tag">21+</span>
+                        </div>
+                        <div class="panel-card adult">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>Shibari Demonstration</h5>
+                            <p>A demonstration of artistic rope bondage and safety discussion.</p>
+                            <span class="presenter">Jacob "The Bobda" Kestner</span>
+                            <span class="age-tag">18+</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>The Reality of Steam Punk Technology</h5>
+                            <p>Charles Babbage's difference engine and other golden age inventions.</p>
+                            <span class="presenter">Mark Rounds, Judy Johnson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Wielding Words: Creative Writing</h5>
+                            <p>Craft captivating tales from other dimensions.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Eva Elasigue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3117</span>
+                            <h5>Can AI tell fact from fiction?</h5>
+                            <p>What AI can and can't do when it comes to fact-checking.</p>
+                            <span class="presenter">Corey Frazier, Jane Campbell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Obscure Anime</h5>
+                            <p>Share your love for anime that no one seems to know about.</p>
+                            <span class="presenter">Shawn Merrow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">11:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Filking</h5>
+                            <p>The music of fandom! Literary, fantasy, sci-fi, historical topics... and cats.</p>
+                            <span class="presenter">Glen "Scruffy" Hammer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saturday Schedule -->
+            <div class="schedule-day" id="saturday-schedule" data-day-label="Saturday">
+                <div class="time-block">
+                    <h4 class="time-header">8:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Relax Harder</h5>
+                            <p>Early morning, slow wake-up with breathing techniques for managing stress.</p>
+                            <span class="presenter">Bruce Schmoetzer, Doug Staudt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">9:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Show Panel Area</span>
+                            <h5>Round Table Art</h5>
+                            <p>Collaborative art project with 6 artists.</p>
+                            <span class="presenter">Dave Acton</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Debate: Space Habitats vs Mars</h5>
+                            <p>Would the infrastructure for Mars be any less grandiose than O'Neill's High Frontier?</p>
+                            <span class="presenter">Judy Johnson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Getting Your Story Noticed</h5>
+                            <p>Make your manuscript stand out in a crowded market.</p>
+                            <span class="presenter">B Cubed</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Airbrushing 101</h5>
+                            <p>Fundamentals of airbrushing, from makeup to props.</p>
+                            <span class="presenter">Abby Bornemann</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Digital Art</h5>
+                            <p>Exploring Photoshop, Blender, Procreate, and more.</p>
+                            <span class="presenter">Brittany Torres, Michael Brugger, Lizzy D Hill, Cheyanna Krone</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Worldbuilding: Designing a Belief System</h5>
+                            <p>Add depth to your world by understanding shared beliefs.</p>
+                            <span class="presenter">Sanan Kolva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">10:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured family">
+                            <span class="room-tag">Executive Boardroom</span>
+                            <h5>KidCon</h5>
+                            <p>Ages 5-10. An out of this world experience! Activities include: Paint an Ornament, Roll a Snowman, The Missing Cupcake Mystery, Make A Flying Saucer, Alien Slime, Galaxy Rock Painting, Space Suncatchers, and more!</p>
+                            <span class="presenter">Youth Programming</span>
+                        </div>
+                        <div class="panel-card featured family">
+                            <span class="room-tag">Room 3117</span>
+                            <h5>Con-Teen-A</h5>
+                            <p>Ages 10-16. A great place for the aliens that have invaded youth! Activities include: Youth D&D, Escape Rooms, Mini Painting, Rock Painting, Crochet, Friendship Bracelets, and more!</p>
+                            <span class="presenter">Youth Programming</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Filipino Sword Fighting vs HEMA</h5>
+                            <p>Demo showcasing Pekiti-Tirsia Kali vs Historical European Martial Arts.</p>
+                            <span class="presenter">Jim Epperly</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>NASA's Unsung Heroes</h5>
+                            <p>The Mercury 13, Margaret Hamilton, Major Robert H Lawrence Jr, and more.</p>
+                            <span class="presenter">Corey Frazier</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Podcast 102: Growing Your Show</h5>
+                            <p>Advanced techniques for improving episode quality.</p>
+                            <span class="presenter">Ron Leota, Kairsten Fay</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Introduction to the Heroine's Journey</h5>
+                            <p>Gail Carriger's counterpoint to the Hero's Journey.</p>
+                            <span class="presenter">D.L. Solum, Roberta Rice</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Aikido: Mindfulness in Motion</h5>
+                            <p>Modern Japanese martial art blending ancient forms with Budo philosophy.</p>
+                            <span class="presenter">Bruce Schmoetzer, Doug Staudt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">11:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Room Panel Area</span>
+                            <h5>Art Demonstration with Jeff Sturgeon</h5>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Starfleet Region 5 Summit and Muster</h5>
+                            <p>Annual awards banquet for STARFLEET, the international Star Trek fan club.</p>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Hooked on Space</h5>
+                            <p>What first sparked your interest in space? Audience participation encouraged!</p>
+                            <span class="presenter">Corey Frazier, Jane Campbell, Debora Godfrey</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Define "Alien"</h5>
+                            <p>What do we mean by "alien"? Can fictional aliens reach across that divide?</p>
+                            <span class="presenter">Deborah Fredericks, Francis Pauli, Judy Johnson, Doug Odell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Demystifying Fabrics for Cosplay</h5>
+                            <p>Learn how to confidently choose the right materials. Hands-on with samples!</p>
+                            <span class="presenter">Kumo the Crimson Wolfe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">Noon</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Early Influences in Sci-Fi - All GOH Panel</h5>
+                            <p>What science fiction/fantasy inspired you growing up?</p>
+                            <span class="presenter">Yoshi Vu, Brittany Torres, Jeff Sturgeon, Isaac Singleton Jr, Bob Brown, David Gerrold</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Who's Art is it Anyway?</h5>
+                            <p>Improv-style cover art! Artists create from audience suggestions.</p>
+                            <span class="presenter">Echo Chernik, Andy Vanouverberghe</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Science Fiction Prophecy</h5>
+                            <p>Who's gotten things right and who's looked like idiots?</p>
+                            <span class="presenter">G. David Nordley, Roberta Rice</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Cosplay Unveiled: Novice to Pro</h5>
+                            <p>Advanced techniques, budgeting, and creative growth.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Tana Savage, BrAd Steiner</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Best Practices for Tabletop RPG Design</h5>
+                            <p>Resolution mechanics, character creation, setting—what determines the "feel".</p>
+                            <span class="presenter">John Ellis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">1:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Brittany Torres">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: Brittany Torres</h5>
+                            <p>Artist Guest of Honor. Award-winning fantasy artist with a unique style of digital painting focusing on luminous, fantastical female portraits.</p>
+                            <span class="presenter">Brittany Torres</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Art Show Panel Area</span>
+                            <h5>Dragon Drawing</h5>
+                            <p>Let's draw some dragons. No stress, no judgement, no experience needed.</p>
+                            <span class="presenter">Herb Leonhard</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Intelligent Hardware and AI, Skynet vs. Genesis</h5>
+                            <p>The difference between targeted marketing algorithms and autonomous systems.</p>
+                            <span class="presenter">David Tucker, A.K. Llyr</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Satire and Humor</h5>
+                            <p>The mechanics of humor and weaving it into your story.</p>
+                            <span class="presenter">Bob Brown, Manny Frishberg, K.G. Anderson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Romantasy: Romance in Fantastical Settings</h5>
+                            <p>What is so appealing about this genre?</p>
+                            <span class="presenter">Elizabeth R. Alix, Yoshi Vu, Corvin King, Roberta Rice</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Using Punnett Squares for Character Development</h5>
+                            <p>Simple logic tool for plot, theme, and character development.</p>
+                            <span class="presenter">Anne Prather</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">2:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="David Gerrold">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: David Gerrold</h5>
+                            <p>Author Guest of Honor. Author of Star Trek's "The Trouble With Tribbles." Ten-time Hugo and Nebula nominee. 2022 Heinlein Award winner.</p>
+                            <span class="presenter">David Gerrold</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Developing Language and Culture for Aliens</h5>
+                            <p>Strange cultures shaped by language and geography provide inspiration.</p>
+                            <span class="presenter">David Tucker, Doug O'Dell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>"Real" vs Fictional Sword Fighting</h5>
+                            <p>Why did Kylo's sword have a cross-guard but never got used?</p>
+                            <span class="presenter">Jim Epperly, DL Solum, Mike MCWatters</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Outline in 60 Workshop</h5>
+                            <p>A full novel outlined in one time slot using audience input!</p>
+                            <span class="presenter">Frog Jones</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Seeds of the Imagination: Fantasy Gardens</h5>
+                            <p>Learn plant selection, soil preparation, and how nature thrives in mythical realms.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Eva Elasigue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">3:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured" data-guest="Isaac Singleton Jr.">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Keynote: Isaac Singleton Jr.</h5>
+                            <p>Actor & Voice Artist. Voice of Thanos in Avengers Assemble & Guardians of the Galaxy. Credits include Pirates of the Caribbean, Galaxy Quest, Deadpool, and The Mandalorian.</p>
+                            <span class="presenter">Isaac Singleton Jr.</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Art Room Panel Area</span>
+                            <h5>Art Demonstration with Michael Brugger</h5>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>The Drop Spindle</h5>
+                            <p>Create your own drop spindle and learn to use it. Class includes all supplies.</p>
+                            <span class="presenter">Kady Nicols</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Making Art for a Living</h5>
+                            <p>Why become an artist and how to make a living from it.</p>
+                            <span class="presenter">Jeff Sturgeon, Chance Wolfe, Lizzy D Hill, Brittany Torres, and more</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Tabletop RPG with a Virtual Tabletop</h5>
+                            <p>How to organize and run a campaign on a VTT.</p>
+                            <span class="presenter">Shawn Merrow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">4:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>What's So Good About DEI?</h5>
+                            <p>Diversity, Equity, and Inclusion—why it's important to uphold.</p>
+                            <span class="presenter">Deborah Fredericks, Francis Pauli, Corey Frazier, David Tucker</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Magic Houses</h5>
+                            <p>Howl's Moving Castle, Gertrude Hunt—what kind would you live in?</p>
+                            <span class="presenter">Elizabeth R. Alix</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>How do you price your art?</h5>
+                            <p>Time, materials, prints, frames—they add up!</p>
+                            <span class="presenter">Lizzy D Hill, Jeff Sturgeon, Michael Brugger, Brian Grinnell, Cheyanna Krone</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Fictional Religion That Respects All Cultures</h5>
+                            <p>How to write fictional religions without appropriating others' sacred tales.</p>
+                            <span class="presenter">Rhiannon Louve, Sanan Kolva, Judy Johnson</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">5:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Room Panel Area</span>
+                            <h5>Art Demonstration with Lizzy D Hill</h5>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Art and Technology</h5>
+                            <p>How often has art developed new technologies?</p>
+                            <span class="presenter">Jane Campbell, Kelsey Butner, Scott Butner</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Writing Outside Your Own Experiences</h5>
+                            <p>How to not wind up on a "bad example" blog.</p>
+                            <span class="presenter">Francis Pauli, John Ellis, David Tucker, Tom Whitmore</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>So you want to do an anthology?</h5>
+                            <p>Logistics and creative challenges of multi-author books.</p>
+                            <span class="presenter">BCubed, David Gerrold, Jim Wright</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Being Trans In 2026</h5>
+                            <p>Support and advice for surviving and thriving. Welcoming to all.</p>
+                            <span class="presenter">Rhiannon Louve, Thomas Gondolfi</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Making a Board Game: Concept to Shelf</h5>
+                            <p>The journey of creating a board game.</p>
+                            <span class="presenter">Will Carson</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">6:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Masquerade</h5>
+                            <p>Costume competition! Show off your best costumes and win prizes!</p>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Fermi Question Assumptions</h5>
+                            <p>Could Earth already be swarming with alien nano-machines?</p>
+                            <span class="presenter">Jane Campbell, Kelsey Butner, Scott Butner</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Music, Characters, and Community</h5>
+                            <p>How music makes literature "more real."</p>
+                            <span class="presenter">Mark Rounds, C. Rae D'Arc</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Diverse Neurodivergence in Literature and Media</h5>
+                            <p>Representations of neurodivergence in literature, movies, songs.</p>
+                            <span class="presenter">Anne Prather, David Gerrold, Kady Nicols</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">7:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card adult">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Drink and Draw</h5>
+                            <p>All artists invited to mingle and doodle.</p>
+                            <span class="presenter">Dave Acton</span>
+                            <span class="age-tag">21+</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Beyond the Nebula: Sci Fi as Social Commentary</h5>
+                            <p>How SF serves as metaphor for current social and political questions.</p>
+                            <span class="presenter">Isaac Singleton Jr, Virginia Black, BrAd Steiner</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Using Tropes Effectively</h5>
+                            <p>How to use tropes in your writing without misusing them.</p>
+                            <span class="presenter">Sanan Kolva, DL Solum</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Period Writing</h5>
+                            <p>Headaches and challenges when you set a story in the past.</p>
+                            <span class="presenter">Irene Radford, Thomas Gondolfi, Vanessa MacLelland, K.G. Anderson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Cartography in SFF Art</h5>
+                            <p>What makes some maps more compelling than others?</p>
+                            <span class="presenter">Ed Buchan</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Consent: Let's talk about it</h5>
+                            <p>Personal responsibility and fostering healthy consent culture.</p>
+                            <span class="presenter">Jacob "Bobda" Kestner, Will Carson, Eva Elasigue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">8:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Courtyard</span>
+                            <h5>Fractal Phase Fire Show</h5>
+                            <p>Spectacular outdoor fire performance by Seattle/Pacific Northwest entertainment artists.</p>
+                            <span class="presenter">Fractal Phase</span>
+                        </div>
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Nerd Jeopardy</h5>
+                            <p>Compete to earn $$$. That's right, real cash!</p>
+                            <span class="presenter">Richard Pirtle</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>Dialogue Workshop</h5>
+                            <p>Writing Natural Dialogue for Unique Characters.</p>
+                            <span class="presenter">C. Rae D'Arc, Anne Prather, Sanan Kolva, Manny Frishberg</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>How does one police an asteroid belt?</h5>
+                            <p>Millions of scattered rocks—piracy is a distinct possibility.</p>
+                            <span class="presenter">G. David Nordley, Judy Johnson, Debora Godfrey</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Writing Your Way Up to Pro Level</h5>
+                            <p>Best paths for writers who want to get published and paid.</p>
+                            <span class="presenter">K.G. Anderson, Virginia Black</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>A Lifetime of Art</h5>
+                            <p>Slide show and discussion of years of art, primarily Analog magazine.</p>
+                            <span class="presenter">Bill Warren</span>
+                        </div>
+                        <div class="panel-card adult">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Polyamory!</h5>
+                            <p>Polyamory and ethical non-monogamy for beginners.</p>
+                            <span class="presenter">Jacob "Bobda" Kestner, Eva Elasigue, Kady Nicols, Jonosh Vladescue</span>
+                            <span class="age-tag">18+</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Faster COMBAT for Tabletop RPGs</h5>
+                            <p>Tips and tricks to keep RPG combats moving quickly.</p>
+                            <span class="presenter">Christian Cowles, Lauren Cowles, John Ellis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">9:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Filking</h5>
+                            <p>The music of fandom. Sing-along and sharing welcome!</p>
+                            <span class="presenter">Glen "Scruffy" Hammer</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>So you want to win a Hugo?</h5>
+                            <p>What it takes to transition from "eligible" to "finalist."</p>
+                            <span class="presenter">BCubed, David Gerrold, Jim Wright, Frog Jones</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Armor and Weapons Discussion</h5>
+                            <p>Hands-on demo. 18+ can handle the weapons.</p>
+                            <span class="presenter">Mike McWatters, Mark Rounds</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Story Time with Uncle Bill</h5>
+                            <p>Stories from many decades in fandom.</p>
+                            <span class="presenter">Bill Warren</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Faster GAME PLAY for TTRPGs</h5>
+                            <p>Tips for running faster games outside of combat.</p>
+                            <span class="presenter">Christian Cowles, Lauren Cowles, John Ellis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">10:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Dance Party</h5>
+                            <p>Get your groove on at the galaxy's hottest dance floor! 10pm - 2am</p>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Ancient Computers</h5>
+                            <p>These devices have been around far longer than most people realize.</p>
+                            <span class="presenter">Mark Rounds, Eva Elasigue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">2:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Late Night Drum Circle</h5>
+                            <p>Transcend from chaos through composition until we all beat as one.</p>
+                            <span class="presenter">Juliana Aldrich</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sunday Schedule -->
+            <div class="schedule-day" id="sunday-schedule" data-day-label="Sunday">
+                <div class="time-block">
+                    <h4 class="time-header">9:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Broadsword Basics</h5>
+                            <p>Footwork, range, breathing, and good form. Bring your own training sword!</p>
+                            <span class="presenter">D.L. Solum</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>What is Romantasy?</h5>
+                            <p>The hottest fiction trend of 2025—what sets it apart?</p>
+                            <span class="presenter">Yoshi Vu, Corvin King</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Getting Started with Photo Composition</h5>
+                            <p>Blending photography and digital painting with Artist GOH Brittany Torres.</p>
+                            <span class="presenter">Brittany Torres</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Free Website Hosting</h5>
+                            <p>Technical discussion for beginner coders using open source tools.</p>
+                            <span class="presenter">Kairsten Fay, Eva Elasigue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Create Worlds and Characters That Fit</h5>
+                            <p>How do you make these elements work together?</p>
+                            <span class="presenter">Sanan Kolva, Doug Odell, C. Rae D'Arc</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Why Are We Asking AI to do Hard Things?</h5>
+                            <p>Talk to text is still a mess—what makes anyone think AI could drive?</p>
+                            <span class="presenter">Jane Campbell, Corey Frazier, Manny Frishberg</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>The Art of Ghostbusters Gear</h5>
+                            <p>Proton packs through the films, building vs. buying, safety at events.</p>
+                            <span class="presenter">Columbia Basin Ghost Busters</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3127</span>
+                            <h5>Chibi-Robo: Nintendo's Biggest Fumble</h5>
+                            <p>A cute Gamecube game where you play as a robot cleaning a home.</p>
+                            <span class="presenter">Rin Fisher, Tana Savage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">10:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Art Room Panel Area</span>
+                            <h5>Art Demo with C'Mone Rivera</h5>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Fight Like a Fremen</h5>
+                            <p>Filipino-based fighting style from the recent Dune movies.</p>
+                            <span class="presenter">Jim Epperly</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">After Dark 21+</span>
+                            <h5>Brewing Enchantment: Beverage Tasting</h5>
+                            <p>Non-alcoholic sensory adventure exploring flavor profiles.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Ghostbusters Through the Generations</h5>
+                            <p>Why the original still resonates and how kids and parents connect today.</p>
+                            <span class="presenter">Columbia Basin Ghostbusters</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Promote Your Creative Projects</h5>
+                            <p>Marketing your art, stories, or podcasts on social media.</p>
+                            <span class="presenter">Kairsten Fay, Andy Vanoverberghe, Eva Elasigue, Lizzy D Hill</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Basic Tools of Songwriting</h5>
+                            <p>Rhyme, rhythm, scansion, melody and harmony.</p>
+                            <span class="presenter">Anne Prather, Mark Rounds</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Post-Human Soldiers</h5>
+                            <p>Robotics, genetic engineering, bionics, neural interfaces.</p>
+                            <span class="presenter">AK Llyr</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Courtyard</span>
+                            <h5>Light Sabers 101</h5>
+                            <p>Bring your light sabers or a pool noodle!</p>
+                            <span class="presenter">Mike McWatters</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">11:00 AM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>The Place of Small Presses in Sci Fi/Fantasy</h5>
+                            <p>More independent publishers now than since the 1950s.</p>
+                            <span class="presenter">B Cubed</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>The Digital Quest: Crafting Your Creative Website</h5>
+                            <p>Essential building blocks of a professional website with Artist GOH.</p>
+                            <span class="presenter">Brittany Torres</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Writing without Heroes and Villains</h5>
+                            <p>Nobody is the villain in her own movie... except some people are.</p>
+                            <span class="presenter">Manny Frishberg, Francis Pauli, John Ellis, Thomas Gondolfi</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Historic Embroidery</h5>
+                            <p>Hands-on with hoops, fabric, threads. Come and go as you like.</p>
+                            <span class="presenter">Kady Nicols</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>AI Commanders</h5>
+                            <p>How AI commanders operate in tactical, kinetic scenarios.</p>
+                            <span class="presenter">AK Llyr</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Werewolves</h5>
+                            <p>Why we love them. The history of the legend. Awooo!</p>
+                            <span class="presenter">Rhiannon Louve, D.L. Solum, Roberta Rice</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">Noon</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card adult">
+                            <span class="room-tag">After Dark</span>
+                            <h5>Mead Creation</h5>
+                            <p>Crafted since the Viking Age. Learn how to brew it yourself!</p>
+                            <span class="presenter">Jesse Sandbeck, Mike Rutz</span>
+                            <span class="age-tag">21+</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Cosplay Costume and Merch Swap</h5>
+                            <p>Find a new home for that cosplay that doesn't fit anymore. No cash exchanges.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Tana Savage</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Storyboarding for Fiction</h5>
+                            <p>Shape your idea into an organized format.</p>
+                            <span class="presenter">Ron Leota, Kairsten Fay, Andy Vanoverberghe</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Borrowing Other Cultures</h5>
+                            <p>Appreciation or Appropriation? Where are the lines?</p>
+                            <span class="presenter">Manny Frishberg, Virginia Black, David Tucker, Debora Godfrey</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>The Inevitability of Life</h5>
+                            <p>Building blocks of life formation and possibilities on other worlds.</p>
+                            <span class="presenter">Kady Nicols</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>What Artist Beat You to the Punch?</h5>
+                            <p>Who acted on a great idea before you did?</p>
+                            <span class="presenter">Bill Warren, Yoshi Vu, Cheyanna Krone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">1:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Online Critique Groups</h5>
+                            <p>How to find or set up a high quality writer's group.</p>
+                            <span class="presenter">D.L. Solum, Francis Pauli, K.G. Anderson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Meet My Characters</h5>
+                            <p>Meet the characters from Anne Prather's book!</p>
+                            <span class="presenter">Anne Prather</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3125</span>
+                            <h5>Anime in Space</h5>
+                            <p>From Gundam to Cyberpunk to The Irresponsible Captain Taylor.</p>
+                            <span class="presenter">Shawn Merrow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">2:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Firearms in Fiction and Gaming</h5>
+                            <p>Dispelling myths that continue in fiction with veterans and experts.</p>
+                            <span class="presenter">Mark Rounds, D.L. Solum</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Geopolitics of Nuclear War</h5>
+                            <p>Deep dive into economics and geopolitics of power production.</p>
+                            <span class="presenter">Christian Cowles, Jim Conca, A.K. Llyr, David Tucker, Ed Buchan, Jim Wright</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">3:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>A Victorian Picnic</h5>
+                            <p>Learn the history of the picnic and taste traditional Victorian foods.</p>
+                            <span class="presenter">Doug O'Dell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 2311</span>
+                            <h5>The Actor & The Word</h5>
+                            <p>Collaboration between writer and performer.</p>
+                            <span class="presenter">Isaac Singleton Jr, David Gerrold, John Ellis, BrAd Steiner</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Alien Intelligences on Earth and in Space</h5>
+                            <p>Communicating with dolphins, elephants, and eventually aliens.</p>
+                            <span class="presenter">Mark Rounds, Judy Johnson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>World-Building vs. Character-Building</h5>
+                            <p>Which comes first?</p>
+                            <span class="presenter">Francis Pauli, Vanessa MacLelland, Will Carson</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Mystic Horizon: Astrology & Witchcraft</h5>
+                            <p>Ancient traditions, natal charts, meditation, and energy work.</p>
+                            <span class="presenter">Kumo the Crimson Wolfe, Eva Elasigue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Getting the Work Done</h5>
+                            <p>From habit stacking to bullet-proof self belief.</p>
+                            <span class="presenter">Jason Bond</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3123</span>
+                            <h5>Gold and Silver Leafing</h5>
+                            <p>Hands-on experience adding leafing to your art.</p>
+                            <span class="presenter">Michael Brugger, Brian Grinnell, Lizzy D Hill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">4:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card">
+                            <span class="room-tag">Bin 20</span>
+                            <h5>Tea Dueling</h5>
+                            <p>Square off to win prizes... tea, of course!</p>
+                            <span class="presenter">Doug O'Dell</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>When Mainframes Ruled the Earth</h5>
+                            <p>How computing was done with mainframes.</p>
+                            <span class="presenter">Mark Rounds, Debora Godfrey</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Harvest Boardroom</span>
+                            <h5>Furry Writing and Publishing</h5>
+                            <p>The current state of furry/anthropomorphic fiction.</p>
+                            <span class="presenter">Francis Pauli</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3119</span>
+                            <h5>Limits of Magical Healing</h5>
+                            <p>What are the limits and costs to caster or recipient?</p>
+                            <span class="presenter">Sanan Kolva, Eva Elasigue</span>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Room 3121</span>
+                            <h5>Cool the Earth by Reducing Solar Input?</h5>
+                            <p>Real possibilities, downsides, and who decides?</p>
+                            <span class="presenter">G. David Nordley, Kady Nicols</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="time-block">
+                    <h4 class="time-header">5:00 PM</h4>
+                    <div class="panels-grid">
+                        <div class="panel-card featured">
+                            <span class="room-tag">Bronze Ballroom</span>
+                            <h5>Closing Ceremonies</h5>
+                            <p>So long, and thanks for all the fish! See you next year!</p>
+                        </div>
+                        <div class="panel-card">
+                            <span class="room-tag">Sage Boardroom</span>
+                            <h5>Paranormal Stories from the Pacific Northwest</h5>
+                            <p>Documented supernatural encounters local to our region.</p>
+                            <span class="presenter">Kairsten Fay, Ron Leota, Roberta Rice, Debora Godfrey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convention Map -->
+    <section id="map" class="section map-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">NAVIGATION CHART</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Your Guide to the Galaxy (or at least the convention)</p>
+            </div>
+            <div class="section-content collapsed">
+            <div class="map-wrapper">
+                <div class="map-container">
+                    <img src="images/radcon-map-44.png" alt="RadCon's Guide to the Galaxy - Convention Map" class="convention-map">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendors Section -->
+    <section id="vendors" class="section vendors-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">VENDORS AND VISIONARIES</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Purveyors of Fine Galactic Goods</p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="vendors-grid">
+                <div class="vendor-category">
+                    <h3>Dealer's Hall</h3>
+                    <ul class="vendor-list">
+                        <li>5 Stranded Fairytales</li>
+                        <li>Chromatic Art Studio</li>
+                        <li>Echo Chernik</li>
+                        <li>Fairy Bliss Workshop</li>
+                        <li>Firefox Fashions</li>
+                        <li>Fullmoon Tradesman</li>
+                        <li>Herb Leonhard Art</li>
+                        <li>Idle Waifu</li>
+                        <li>Infinite Frontiers</li>
+                        <li>Jamie Walton Art</li>
+                        <li>Studio 1215</li>
+                        <li>Valhalla's Workbench</li>
+                    </ul>
+                </div>
+
+                <div class="vendor-category">
+                    <h3>Artist's Alley</h3>
+                    <ul class="vendor-list">
+                        <li>3 Branches Creations</li>
+                        <li>Bunneah Munkeah</li>
+                        <li>Bureker Publishing LLC</li>
+                        <li>Cat Chernik</li>
+                        <li>Creative Power Production</li>
+                        <li>Dragon's Breath Crochet</li>
+                        <li>Hair Shimmers and Sparkles</li>
+                        <li>Ironed Art</li>
+                        <li>LorraineFire Artwork</li>
+                        <li>Meg James and L James</li>
+                        <li>Polymermaid Creations</li>
+                        <li>Ravens Shire LLC</li>
+                        <li>TANSTAAFL Press</li>
+                    </ul>
+                </div>
+
+                <div class="vendor-category">
+                    <h3>Dealer's Annex</h3>
+                    <ul class="vendor-list">
+                        <li>Adventure's Underground</li>
+                        <li>Adhala's Closet</li>
+                        <li>Attention Span Games LLC</li>
+                        <li>Black Cat Jewelry & Gifts</li>
+                        <li>Chimerian 3D Prints & Games</li>
+                        <li>Constellation Designs</li>
+                        <li>Crazy Chick Creations</li>
+                        <li>Dancing Muse</li>
+                        <li>Dynamic Imagery</li>
+                        <li>Fa'el's Forge</li>
+                        <li>Hearts and Stars</li>
+                        <li>How Sweet It Is</li>
+                        <li>Little Dumpling Arts</li>
+                        <li>Luna de Crystalis</li>
+                        <li>Nicole RedFox Oddities</li>
+                        <li>Otaku Den</li>
+                        <li>Prism Pop Shop</li>
+                        <li>Promise Land Tannery</li>
+                        <li>Timeless Leatherworks</li>
+                        <li>Stonehouse Games Plus</li>
+                        <li>Soapernova LLC</li>
+                        <li>Winging It</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="annex-attractions">
+                <h3>End of the Annex Attractions</h3>
+                <div class="attraction-cards">
+                    <div class="attraction-card">
+                        <span class="attraction-icon">📺</span>
+                        <h4>Anime Room</h4>
+                    </div>
+                    <div class="attraction-card">
+                        <span class="attraction-icon">🚀</span>
+                        <h4>Artemis Bridge</h4>
+                    </div>
+                    <div class="attraction-card">
+                        <span class="attraction-icon">🔐</span>
+                        <h4>Alive Production's Escape Room</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="merch-notice">
+                <p>RadCon merch can be found at the Safety Desk!</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming Section -->
+    <section id="gaming" class="section gaming-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">GAMES AND GOOD TIMES</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Celebrating 43 Years of Gaming</p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="gaming-content">
+                <div class="gaming-info">
+                    <p>Each year, RadCon plays host to a variety of gaming tables run by dedicated Game Masters in the Gaming Room, found in Forest Rooms. An accurate daily schedule will be posted through the duration of the convention. Please make sure to sign up for your favorites!</p>
+                </div>
+
+                <div class="mtg-tournaments">
+                    <h3>Magic: The Gathering Tournaments</h3>
+                    <p class="mtg-location">All tournaments in the Card Room. Costs vary.</p>
+
+                    <div class="tournament-schedule">
+                        <div class="tournament-day">
+                            <h4>Friday</h4>
+                            <ul>
+                                <li><span class="time">6pm</span> Commander</li>
+                                <li><span class="time">Midnight</span> Legacy "Type 1"</li>
+                            </ul>
+                        </div>
+                        <div class="tournament-day">
+                            <h4>Saturday</h4>
+                            <ul>
+                                <li><span class="time">11am</span> Sealed Deck</li>
+                                <li><span class="time">9pm</span> Tier 1 Exhibition Commander Grand Melee</li>
+                            </ul>
+                        </div>
+                        <div class="tournament-day">
+                            <h4>Sunday</h4>
+                            <ul>
+                                <li><span class="time">10am</span> 2 Headed Giant</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="booster-drafts">BOOSTER DRAFTS ALL WEEKEND</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Show Section -->
+    <section id="art" class="section art-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">THE ART SHOW</h2>
+                <span class="expand-icon">+</span>
+                <blockquote class="van-gogh">"The sight of the stars always makes me dream" — Vincent Van Gogh</blockquote>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="art-content">
+                <div class="art-info">
+                    <h3>Welcome to the Art Show</h3>
+                    <p>Artists from around the country and into Canada have brought a feast for the eyes that only our Art Show can provide.</p>
+
+                    <div class="art-rules">
+                        <h4>Guidelines</h4>
+                        <ul>
+                            <li>Art is meant to be seen with your eyes, not your hands or fingers</li>
+                            <li>Please place food, drink, coats, and bags in our checking area</li>
+                            <li>Bids may be written until 11am Sunday</li>
+                            <li>Pieces enter live auction with 4+ bids</li>
+                            <li>Bidding is an agreement to purchase at posted price</li>
+                        </ul>
+                    </div>
+
+                    <div class="auction-info">
+                        <h4>Art Auction</h4>
+                        <p><strong>Sunday 1pm | Bronze Ballroom</strong></p>
+                        <p>Speak clearly and loud enough for the auctioneer to hear during bidding. Unsold art may be purchased for the "After-Auction" price.</p>
+                    </div>
+                </div>
+
+                <div class="featured-artists">
+                    <h3>Featured Artists</h3>
+                    <div class="artist-grid">
+                        <span>Brittany Torres</span>
+                        <span>Cecillia Jenkins</span>
+                        <span>Kari Acton</span>
+                        <span>Herb Leonhard</span>
+                        <span>Rich Baker</span>
+                        <span>Cassandra Lozano</span>
+                        <span>Alan F. Beck</span>
+                        <span>LorraineFire</span>
+                        <span>Michael Brugger</span>
+                        <span>Joseph Mace</span>
+                        <span>Angela Castle</span>
+                        <span>Theresa Mather</span>
+                        <span>Peri Charlifu</span>
+                        <span>Betsey Mott</span>
+                        <span>Sarah Clemens</span>
+                        <span>Bunneah Munkeah</span>
+                        <span>Brian Grinnell</span>
+                        <span>Amber Raden</span>
+                        <span>Lizzy D Hill</span>
+                        <span>Cmone Rivera</span>
+                        <span>Aranda Icle</span>
+                        <span>Mark Sharp</span>
+                        <span>Jeff Sturgeon</span>
+                        <span>Andy Vanoverberghe</span>
+                        <span>Yoshi Vu</span>
+                        <span>William R Warren</span>
+                        <span>Tomi Welch</span>
+                        <span>Amber Wilks</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Artwork Carousel - Brittany Torres -->
+            <div class="artwork-carousel">
+                <h3>Featured Artwork by Brittany Torres</h3>
+                <p class="gallery-subtitle">Artist Guest of Honor — "Luminous, fantastical female portraits"</p>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous artwork">‹</button>
+                    <div class="carousel-track-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="images/radcon-481.jpg" alt="Mystical White Stag - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-482.jpg" alt="Steampunk Witch - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-483.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-484.jpg" alt="Sea Creature Portrait - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-485.jpg" alt="Lady of Shalott - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-486.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-487.jpg" alt="Lady of the Lake - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-488.jpg" alt="Witch on Broomstick - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-489.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-490.jpg" alt="Golden Winged Angel - Fantasy Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-491.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-492.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-493.jpg" alt="Fantasy Portrait - Art by Brittany Torres">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/radcon-494.jpg" alt="Dark Queen with Eclipse - Fantasy Art by Brittany Torres">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next artwork">›</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitality Section -->
+    <section id="hospitality" class="section hospitality-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">RESTAURANT AT THE END OF THE UNIVERSE</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Hospitality Suite — Fuel for Your Journey</p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="hospitality-content">
+                <div class="hospitality-hours">
+                    <div class="hours-badge">
+                        <span class="hours-icon">🍽️</span>
+                        <div class="hours-text">
+                            <strong>Hours:</strong>
+                            <span>Fri Noon-Midnight</span>
+                            <span>Sat All Day</span>
+                            <span>Sun Midnight-2pm</span>
+                        </div>
+                    </div>
+                    <p class="donation-note">Suggested donations $1-$2 per item</p>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card breakfast">
+                        <h4>☀️ Breakfast</h4>
+                        <p class="menu-time">Served 6am - 11am</p>
+                        <ul>
+                            <li>Biscuits & Gravy</li>
+                            <li>Waffles</li>
+                            <li>Donuts</li>
+                            <li>Oatmeal</li>
+                            <li>Muffins</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-card lunch">
+                        <h4>🌮 Lunch/Dinner</h4>
+                        <p class="menu-time">Served 11am - Midnight</p>
+                        <ul>
+                            <li>Death Dogs</li>
+                            <li>Nachos</li>
+                            <li>Salad</li>
+                            <li>Pizza</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-card specials">
+                        <h4>⭐ Daily Specials</h4>
+                        <p class="menu-time">5pm - 6pm</p>
+                        <ul>
+                            <li><strong>Friday:</strong> Sloppy Joes</li>
+                            <li><strong>Saturday:</strong> Chicken Noodle Soup</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-card snacks">
+                        <h4>🍿 Snacks</h4>
+                        <p class="menu-time">Available 24 Hours/Day</p>
+                        <ul>
+                            <li>Veggies & Dip</li>
+                            <li>Fruit</li>
+                            <li>Cheese & Crackers</li>
+                            <li>String Cheese</li>
+                            <li>Candy</li>
+                            <li>Chips</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-card beverages">
+                        <h4>🥤 Beverages</h4>
+                        <p class="menu-time">Always Available</p>
+                        <ul>
+                            <li>Water • Milk • Chocolate Milk</li>
+                            <li>Gatorade • Soda • Sunny-D</li>
+                            <li>Hot Apple Cider</li>
+                            <li>Coffee • Hot Cocoa • Tea</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="hospitality-note">May close periodically for cleaning. The 3-2-1 rule includes eating — fuel up!</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masquerade Section -->
+    <section id="masquerade" class="section masquerade-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">THE MASQUERADE</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">Saturday 6pm | Bronze Ballroom</p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="masquerade-content">
+                <div class="masq-info">
+                    <h3>How to Enter</h3>
+                    <p>Sign up must be completed on Saturday by <strong>1:00 PM</strong>. Winners announced following the Masquerade. Registering grants RadCon permission to use images for promotional purposes.</p>
+                </div>
+
+                <div class="divisions">
+                    <h3>Skill Divisions</h3>
+                    <div class="division-grid">
+                        <div class="division-card">
+                            <h4>Youth (12 & Under)</h4>
+                            <p>Children's Masquerade. Adult supervision required.</p>
+                        </div>
+                        <div class="division-card">
+                            <h4>Novice</h4>
+                            <p>Little to no experience, first time performers, never won an award.</p>
+                        </div>
+                        <div class="division-card">
+                            <h4>Apprentice</h4>
+                            <p>Some experience, entered before, may or may not have won.</p>
+                        </div>
+                        <div class="division-card">
+                            <h4>Journeyman</h4>
+                            <p>Significant experience, two "Best of Novice" awards, or "Best of Show" at smaller cons.</p>
+                        </div>
+                        <div class="division-card">
+                            <h4>Master</h4>
+                            <p>Extensive experience, professional actors, or persons who make costumes professionally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masq-rules">
+                    <h3>General Rules</h3>
+                    <ul>
+                        <li>Content limited to PG-13</li>
+                        <li>No threatening language</li>
+                        <li>NO NUDITY - real or implied</li>
+                        <li>No pyrotechnics or projectiles</li>
+                        <li>No live animals (except service animals)</li>
+                        <li>No messy substances</li>
+                        <li>All electric power must be self-contained</li>
+                        <li>Special effects must be pre-approved</li>
+                        <li>Presentations limited to one minute</li>
+                    </ul>
+                    <p class="masq-motto">Above all else, HAVE FUN! This is your time to shine!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participating Groups -->
+    <section id="groups" class="section groups-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">PARTICIPATING GROUPS</h2>
+                <span class="expand-icon">+</span>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="groups-grid">
+                <div class="group-card">
+                    <h3>Clan Volos</h3>
+                    <p>Practical historical recreation combining research-driven living history with medieval-inspired combat demonstrations. Presenting the past clearly and honestly through action and discussion.</p>
+                </div>
+                <div class="group-card">
+                    <h3>Columbia Basin Ghostbusters</h3>
+                    <p>Supports local schools, charities, and families with compassion and a well-calibrated proton pack. Proving that a team trained to wrangle ectoplasmic chaos can make the Tri-Cities a safer, kinder place.</p>
+                </div>
+                <div class="group-card">
+                    <h3>Fractal Phase</h3>
+                    <p>Seattle/Pacific Northwest entertainment artists sharing a love of creative expression. Variable performances connecting with people through flow skills and exciting avenues of expression.</p>
+                    <p class="highlight">Fire Show: Saturday 8pm | Courtyard</p>
+                </div>
+                <div class="group-card">
+                    <h3>Pirates of the High Tea</h3>
+                    <p>Erin & Nathaniel Murphy, hosting the RadCon Tea Party since 2022. Featuring handmade cookies, cupcakes, and scones that are out of this world!</p>
+                    <p class="highlight">Tea Party: Saturday 2pm | Bin 20</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Story Section -->
+    <section id="story" class="section story-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">STUDENT SHORT STORY WINNER</h2>
+                <span class="expand-icon">+</span>
+                <p class="section-subtitle">RadCon Guild Sponsored Contest</p>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="story-content">
+                <div class="story-header">
+                    <h3>"The Last Dance"</h3>
+                    <p class="author">by Sarah Hamby</p>
+                    <p class="award">RadCon 9A Student Short Story Contest Winner</p>
+                </div>
+
+                <div class="story-excerpt">
+                    <p>The narrow streets of Montmartre were alive with the hum of Paris. Gas lamps flickered against the soft evening mist, their golden light spilling over cobblestone paths and the scattered footprints of those who hurried home. Tucked away in a quiet corner stood the little ballet school, its wide windows glowing softly as the strains of a piano floated into the night...</p>
+
+                    <p>Among them was Élise Moreau, a wisp of a girl with dark curls pinned neatly back and eyes that shone with a light unmatched by others her age. Élise had been born to dance...</p>
+
+                    <blockquote>"Dance, Élise," her mother would say, her voice tinged with both pride and worry. "Dance for him, for us, for yourself."</blockquote>
+
+                    <p class="story-note">A beautiful, bittersweet tale of passion, dedication, and the fragile nature of dreams. The full story appears in the print program book.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convention Committee -->
+    <section id="committee" class="section committee-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">CONVENTION COMMITTEE</h2>
+                <span class="expand-icon">+</span>
+            </div>
+
+            <div class="section-content collapsed">
+            <div class="committee-grid">
+                <div class="committee-group">
+                    <h3>Primary Officers</h3>
+                    <ul>
+                        <li><strong>Chair:</strong> Chad Wilcox</li>
+                        <li><strong>Vice Chair:</strong> Tiffany Whitelatch</li>
+                        <li><strong>Secretary:</strong> Jesse Vantine</li>
+                        <li><strong>Treasurer:</strong> Richard Pirtle</li>
+                    </ul>
+                </div>
+                <div class="committee-group">
+                    <h3>Department Heads</h3>
+                    <ul>
+                        <li><strong>Art Show:</strong> Karen Stiles</li>
+                        <li><strong>Communications:</strong> Jesse Sandbeck</li>
+                        <li><strong>Dealers Liaison:</strong> Maddie Wilcox</li>
+                        <li><strong>Gaming:</strong> Ross Hearne</li>
+                        <li><strong>Guest/Outreach:</strong> Dave Acton</li>
+                        <li><strong>Hotel Liaison:</strong> Annette Wilcox</li>
+                        <li><strong>Operations:</strong> Veronica Hernandez</li>
+                        <li><strong>Procurement:</strong> Robert Silvan</li>
+                        <li><strong>Programming:</strong> John Eckert</li>
+                        <li><strong>Masquerade:</strong> Arcana Silvan</li>
+                        <li><strong>Registration:</strong> Tye Lynch</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="memoriam">
+                <h3>In Memoriam</h3>
+                <p>The RadCon Guild remembers with fondness those who have passed onto their next quest.</p>
+                <div class="names">
+                    <span>Bonnie Dillabough</span>
+                    <span>John Brautlatch</span>
+                    <span>Richard Banta</span>
+                    <span>Danielle Emory</span>
+                    <span>Marco A Castle Jr</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Info Section -->
+    <section id="info" class="section info-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="terminal-text">PRACTICAL GUIDE DATA</h2>
+                <span class="expand-icon">−</span>
+                <p class="section-subtitle">Everything You Need to Know</p>
+            </div>
+
+            <div class="section-content">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>📍 Location</h4>
+                    <p class="info-venue">Red Lion Hotel</p>
+                    <p>Pasco, Washington</p>
+                    <p class="info-dates">February 13-15, 2026</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>📧 Contact</h4>
+                    <p>Con Chair: <a href="mailto:Chair@radcon.org">Chair@radcon.org</a></p>
+                    <p>Officers: <a href="mailto:Officers@radcon.org">Officers@radcon.org</a></p>
+                    <p>Website: <a href="https://radcon.org" target="_blank">radcon.org</a></p>
+                </div>
+
+                <div class="info-card">
+                    <h4>🏨 Hotel Info</h4>
+                    <p>Book your room at the Red Lion for the full convention experience!</p>
+                    <p>Mention "RadCon" for convention rates.</p>
+                    <p>On-site restaurant: Seasons</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>🎫 Registration</h4>
+                    <ul>
+                        <li>Fri: 11am - 9pm</li>
+                        <li>Sat: 9am - 9pm</li>
+                        <li>Sun: 9am - 4pm</li>
+                    </ul>
+                    <p>Visit <a href="https://radcon.org" target="_blank">radcon.org</a> for membership info</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>📝 Contests</h4>
+                    <p><strong>Student Short Story Contest</strong></p>
+                    <p>RadCon Guild sponsored • Prizes at Opening Ceremonies</p>
+                    <p><strong>Student Art Contest</strong></p>
+                    <p>Judged by Pacific Northwest artists</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>🛡️ Safety</h4>
+                    <p><strong>RadCon Rule #1:</strong> Don't Be A Pinhead</p>
+                    <p>LED lights prohibited outside dance area</p>
+                    <p>Cosplay is not consent • Be excellent to each other</p>
+                </div>
+            </div>
+
+            <div class="volunteer-cta">
+                <h4>🙋 Want to Help?</h4>
+                <p>RadCon is run entirely by volunteers! Stop by the Info Table to learn about volunteer opportunities.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="Full size artwork" class="lightbox-image">
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section collapsible-section">
+        <div class="container">
+            <div class="section-header collapsible-trigger">
+                <h2 class="section-title terminal-text">CONTACT THE DEV</h2>
+                <span class="expand-icon">+</span>
+            </div>
+            <div class="section-content">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Found an error on this site? Have a suggestion? Let me know!</p>
+                    <p class="contact-note">Looking for a web developer in the Tri-Cities area? I'm available for websites, web apps, and other projects.</p>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/mnjbnydb" method="POST">
+                    <!-- Honeypot field for spam protection -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="Site Issue">Report a site issue or error</option>
+                            <option value="Event Info">Question about RadCon info</option>
+                            <option value="Web Dev">Web development inquiry</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">RADCON 9B</span>
+                    <p>The Hitchhiker's Guide to RadCon</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/Tri-Cities-Radcon-129760420431482/" target="_blank" title="Facebook">FB</a>
+                        <a href="https://www.radcon.org" target="_blank" title="Official Website">Web</a>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=D5J7WL92P34CY" target="_blank" title="Support RadCon">Donate</a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>February 13-15, 2026</p>
+                    <p>Red Lion Hotel, Pasco, WA</p>
+                    <p><a href="https://www.radcon.org/info/hotel/" target="_blank">Hotel Info</a></p>
+                </div>
+                <div class="footer-warning">
+                    <p class="warning-text">WARNING: Unattended minors will be given caffeine, embarrassing amounts of candy, and taught to play D&D</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Remember your towel! | Program Book Designed by Trudy Hatch</p>
+                <p class="dont-panic-small">DON'T PANIC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" title="Back to the top of the page (and the galaxy)">
+        <span>▲</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
