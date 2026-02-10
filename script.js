@@ -426,6 +426,18 @@ function initSmoothScroll() {
             const target = document.querySelector(href);
 
             if (target) {
+                // If target is a collapsible section that's collapsed, expand it
+                if (target.classList.contains('collapsible-section') && target.classList.contains('is-collapsed')) {
+                    const content = target.querySelector('.section-content');
+                    const icon = target.querySelector('.expand-icon');
+                    if (content) {
+                        content.classList.remove('collapsed');
+                        target.classList.remove('is-collapsed');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        if (icon) icon.textContent = '−';
+                    }
+                }
+
                 const navHeight = document.querySelector('.main-nav').offsetHeight;
                 const bannerHeight = document.querySelector('.dont-panic-banner').offsetHeight;
                 const offset = navHeight + bannerHeight + 20;
