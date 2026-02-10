@@ -1254,20 +1254,33 @@ function initGuestModal() {
 
 /**
  * Collapsible Sections
- * All sections are collapsible, first one open by default
+ * Remembers open/closed state in localStorage
  */
 function initCollapsibleSections() {
     const sections = document.querySelectorAll('.collapsible-section');
 
-    sections.forEach((section, index) => {
+    // Load saved states or use defaults
+    let savedStates = JSON.parse(localStorage.getItem('radcon-sections') || 'null');
+
+    // Default: Guide and Schedule open on first visit
+    const defaultOpen = ['guide', 'schedule'];
+
+    sections.forEach((section) => {
         const trigger = section.querySelector('.collapsible-trigger');
         const content = section.querySelector('.section-content');
         const icon = section.querySelector('.expand-icon');
 
         if (!trigger || !content) return;
 
-        // Info section open by default, all others collapsed
-        if (section.id === 'info') {
+        // Determine if section should be open
+        let shouldBeOpen;
+        if (savedStates && savedStates.hasOwnProperty(section.id)) {
+            shouldBeOpen = savedStates[section.id];
+        } else {
+            shouldBeOpen = defaultOpen.includes(section.id);
+        }
+
+        if (shouldBeOpen) {
             content.classList.remove('collapsed');
             section.classList.remove('is-collapsed');
             content.style.maxHeight = 'none';
@@ -1304,8 +1317,21 @@ function initCollapsibleSections() {
                 content.style.maxHeight = '0';
                 if (icon) icon.textContent = '+';
             }
+
+            // Save state to localStorage
+            saveSectionStates();
         });
     });
+
+    function saveSectionStates() {
+        const states = {};
+        sections.forEach(section => {
+            if (section.id) {
+                states[section.id] = !section.classList.contains('is-collapsed');
+            }
+        });
+        localStorage.setItem('radcon-sections', JSON.stringify(states));
+    }
 }
 
 /**
