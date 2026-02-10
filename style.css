@@ -2898,11 +2898,11 @@ body {
     }
 
 
-    /* Hide flavor text on mobile when collapsed */
-    .collapsible-section.is-collapsed .section-subtitle,
-    .collapsible-section.is-collapsed .hoopy-def,
-    .collapsible-section.is-collapsed .reliability-rating,
-    .collapsible-section.is-collapsed .van-gogh {
+    /* Hide flavor text on mobile entirely */
+    .section-header .section-subtitle,
+    .section-header .hoopy-def,
+    .section-header .reliability-rating,
+    .section-header .van-gogh {
         display: none;
     }
 
