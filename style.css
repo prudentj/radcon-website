@@ -3447,12 +3447,13 @@ body {
 
 .section-content {
     transition: max-height 0.5s ease, opacity 0.3s ease;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .section-content.collapsed {
     max-height: 0 !important;
     opacity: 0;
+    overflow: hidden;
 }
 
 /* Print Styles */
